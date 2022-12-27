@@ -74,6 +74,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Introduce Self"/>
+                                <connections>
+                                    <action selector="introduceSelfDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xm4-yx-xGC"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pets" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPR-rD-JZY">
                                 <rect key="frame" x="33" y="491" width="34" height="21"/>
@@ -89,31 +92,34 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="xeK-mT-AwM">
+                                <rect key="frame" x="274" y="485" width="94" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="stepperDidChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="agB-EW-N7d"/>
+                                </connections>
+                            </stepper>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" title="Wants more pets?" translatesAutoresizingMaskIntoConstraints="NO" id="DdA-xN-BSf">
+                                <rect key="frame" x="321" y="533" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SAJ-vn-zT5">
-                                <rect key="frame" x="114" y="491" width="11" height="21"/>
+                                <rect key="frame" x="114" y="491" width="898" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" title="Wants more pets?" translatesAutoresizingMaskIntoConstraints="NO" id="DdA-xN-BSf">
-                                <rect key="frame" x="321" y="533" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </switch>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="xeK-mT-AwM">
-                                <rect key="frame" x="274" y="485" width="94" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </stepper>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="firstNameTestField" destination="o2h-mU-cHb" id="ZDk-BZ-jXF"/>
+                        <outlet property="firstNameTextField" destination="o2h-mU-cHb" id="J96-XN-0Hk"/>
                         <outlet property="lastNameTextField" destination="KeG-4q-sYW" id="Ysn-46-MUW"/>
                         <outlet property="morePetStepper" destination="xeK-mT-AwM" id="GlF-Kb-D5d"/>
                         <outlet property="morePetsSwitch" destination="DdA-xN-BSf" id="PVC-Cw-NIZ"/>
-                        <outlet property="numberOfPetLabel" destination="SAJ-vn-zT5" id="qLF-cb-mkW"/>
+                        <outlet property="numberOfPetsLabel" destination="SAJ-vn-zT5" id="pPU-61-O1I"/>
                         <outlet property="schoolNameTextField" destination="R39-hB-3SH" id="uh5-4t-s90"/>
                         <outlet property="yearSegmentedControl" destination="Iuv-xC-TcF" id="cn0-5V-ftV"/>
                     </connections>
