@@ -24,6 +24,7 @@
 		275DA3A6295A48DC00F8E4D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		275DA3A9295A48DC00F8E4D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		275DA3AB295A48DC00F8E4D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		275DA3B1295B64AB00F8E4D9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				275DA39D295A48DA00F8E4D9 /* AppDelegate.swift */,
+				275DA3B1295B64AB00F8E4D9 /* README.md */,
 				275DA39F295A48DA00F8E4D9 /* SceneDelegate.swift */,
 				275DA3A1295A48DA00F8E4D9 /* ViewController.swift */,
 				275DA3A3295A48DA00F8E4D9 /* Main.storyboard */,
