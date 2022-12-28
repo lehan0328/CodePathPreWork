@@ -24,6 +24,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
     }
     
     //Actions
@@ -50,8 +51,12 @@ class ViewController: UIViewController {
                alertController.addAction(action)
                
                present(alertController, animated: true, completion: nil)
+        
 
     }
     
+    @IBAction func backgroundColorDidChange(_ sender: UIButton) {
+        view.backgroundColor = .systemGray
+    }
 }
 
